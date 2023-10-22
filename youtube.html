@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 使用freeawwsome 必須用的程式碼 
+    密碼:z0905631590-->
+  <script src="https://kit.fontawesome.com/9120ec7c14.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+
+
+</head>
+
+<body>
+  <!-- 搜尋列 -->
+  <div id="header">
+    <div class="box">
+      <div class="box1-1"><i class="fa-solid fa-bars"></i></div>
+      <div class="box1-2"><img src="./data/youtubelogo-01.png" alt=""></div>
+    </div>
+    <div class="box2">
+      <span class="search-icon"></span>
+      <input type="search" placeholder="搜尋">
+      <div class="box2-1"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="box2-2"><i class="fa-solid fa-microphone"></i></div>
+    </div>
+    <div class="box3">
+      <div class="box3-1">婷茜</i></div>
+      <div class="box3-2"><i class="fa-regular fa-bell"></i></div>
+      <div class="box3-3"><i class="fa-solid fa-video"></i></div>
+    </div>
+  </div>
+  <!-- 侧欄 -->
+  <div id="sidebar">
+    <div class="menu">
+      <div class="box">
+        <div><i class="fa-solid fa-house"></i> </div>
+        <div>首頁</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-bolt-lightning"></i> </div>
+        <div>Shorts</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-photo-film"></i></div>
+        <div>訂閱內容</div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+      <div class="box">
+        <div><i class="fa-brands fa-square-youtube"></i></div>
+        <div>媒體庫</div>
+      </div>
+      <div class="box">
+        <div> <i class="fa-solid fa-clock-rotate-left"></i></div>
+        <div>觀看紀錄</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-file-video"></i></div>
+        <div>你的影片</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-clock"></i></div>
+        <div>稍後觀看</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-thumbs-up"></i></div>
+        <div>喜歡的影片</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-angle-down"></i></div>
+        <div>顯示更多</div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+      <p>訂閱內容</p>
+      <div class="box">
+        <div><i class="fa-solid fa-dove"></i></div>
+        <div>東森新聞</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-fish"></i></div>
+        <div>老高與小茉 Mr & Mrs Gao</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-dragon"></i></div>
+        <div>HOOK</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-fish"></i></div>
+        <div>理科太太 Li Ke Tai Tai</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-dove"></i></div>
+        <div>林嘉凌 薔薔Maze </div>
+      </div>
+
+      <div class="box">
+        <div><i class="fa-solid fa-dove"></i></div>
+        <div>作業本 </div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-fish"></i></div>
+        <div>品喬</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>顯示另外101個項目</div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+      <p>探索</p>
+      <div class="box">
+        <div><i class="fa-solid fa-fire"></i></div>
+        <div>發燒影片</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-music"></i></div>
+        <div>音樂 </div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-clapperboard"></i></div>
+        <div>電影</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-podcast"></i></div>
+        <div>直播</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-gamepad"></i></div>
+        <div>遊戲</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-newspaper"></i></div>
+        <div>新聞</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-trophy"></i></div>
+        <div>體育</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-podcast"></i></div>
+        <div>Podcast</div>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+      <p>更多Youtube功能</p>
+      <div class="box">
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div>youtube premium</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div>youtube 工作室</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div>youtube music</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div>youtube kids</div>
+      </div>
+
+      <div class="hr">
+        <hr>
+      </div>
+      <div class="box">
+        <div><i class="fa-solid fa-gear"></i></div>
+        <div>設定</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-flag"></i></div>
+        <div>檢舉紀錄</div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-circle-question"></i></div>
+        <div>說明
+        </div>
+      </div>
+      <div class="box">
+        <div><i class="fa-regular fa-envelope"></i></div>
+        <div>提供意見</div>
+      </div>
+
+      <div class="hr">
+        <hr>
+      </div>
+      <div>
+        <pre>
+  簡介 媒體 版權 與我們聯絡
+  創作者 廣告 開發人員
+  條款 隱私權 政策與安全性
+  YouTube 運作方式 測試新功能
+        </pre>
+        <pre>
+  © 2023 Google LLC
+      </pre>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- 關鍵字 -->
+  <div id="content-top">
+    <ul class="keyword">
+      <li>全部</li>
+      <li>音樂</li>
+      <li>遊戲</li>
+      <li>烹飪節目</li>
+      <li>合輯</li>
+      <li>新聞</li>
+      <li>觀光</li>
+      <li>居家修繕</li>
+      <li>直播</li>
+      <li>寵物</li>
+      <li>美容訣竅</li>
+      <li>已觀看</li>
+      <li>手工藝</li>
+      <li>讓你耳目一新的影片</li>
+    </ul>
+  </div>
+
+  <!-- 影片 -->
+  <div id="content">
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/01.jpg">
+        <div class="sec">5:19</div>
+      </div>
+      <div class="col1">
+        <div class="col1-1">
+          <img src="./data/images/picture/1.jfif">
+        </div>
+      </div>
+      <div class="col2">
+        <div class="col2-1">蔡依林 Jolin Tsai《親愛的對象 Untitled》Official MV ｜「關於我和鬼變成家人的那件事」電影主題曲</div>
+        <div class="col2-2">蔡依林 Jolin Tsai<br>
+          觀看次數：734 萬次･9 個月前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/02.jpg">
+        <div class="sec">5:29</div>
+      </div>
+      <div class="col1">
+        <img src="./data/images/picture/1.jfif">
+      </div>
+      <div class="col2">
+        <div class="col2-1">蔡依林 Jolin Tsai - 第三人稱 The Third Person And I (華納 official 高畫質 HD 官方完整版 MV)</div>
+        <div class="col2-2">蔡依林 Jolin Tsai<br>
+          觀看次數：3687 萬次 ･8 年前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/03.jpg">
+        <div class="sec">4:48</div>
+      </div>
+      <div class="col1">
+       
+          <img src="./data/images/picture/3.jfif">
+        
+      </div>
+      <div class="col2">
+        <div class="col2-1">你是不是有點動心 - Julia Wu 吳卓源｜ Official Music Visual (HD)</div>
+        <div class="col2-2">ChynaHouse<br>
+          觀看次數：2922 萬次･6 年前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/04.jpg">
+        <div class="sec">4:26</div>
+      </div>
+      <div class="col1">
+       <img src="./data/images/picture/4.jfif">
+       </div>
+      <div class="col2">
+        <div class="col2-1">aMEI 張惠妹 feat. 艾怡良、徐佳瑩 [ 傲嬌 Catfight ] Official Music Video</div>
+        <div class="col2-2">聲動娛樂 Mei Entertainment<br>
+          觀看次數：2006 萬次･5 年前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/05.jpg">
+        <div class="sec">3:22</div>
+      </div>
+      <div class="col1">
+       
+          <img src="./data/images/picture/5.jfif">
+        
+      </div>
+      <div class="col2">
+        <div class="col2-1">FIFTY FIFTY (피프티피프티) - 'Cupid' Official MV</div>
+        <div class="col2-2">FIFTY FIFTY Official<br>
+          觀看次數：1.3 億次･7 個月前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/06.jpg">
+        <div class="sec">6:27</div>
+      </div>
+      <div class="col1">
+     
+          <img src="./data/images/picture/6.jfif">
+       
+      </div>
+      <div class="col2">
+        <div class="col2-1">伍佰 Wu Bai&China Blue【挪威的森林 Norwegian forest】Official Music Video</div>
+        <div class="col2-2">滾石唱片 ROCK RECORDS<br>
+          觀看次數：7476 萬次･11 年前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/07.jpg">
+        <div class="sec">3:26</div>
+      </div>
+      <div class="col1">
+       
+          <img src="./data/images/picture/1.jfif">
+        
+      </div>
+      <div class="col2">
+        <div class="col2-1">R3HAB & 蔡依林 Jolin Tsai《Stars Align》Official Music Video</div>
+        <div class="col2-2">蔡依林 Jolin Tsai<br>
+          觀看次數：1700 萬次･2 年前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="pic">
+        <img src="./data/images/picture/08.jpg">
+        <div class="sec">3:04</div>
+      </div>
+      <div class="col1">
+       
+          <img src="./data/images/picture/8.jfif">
+        
+      </div>
+      <div class="col2">
+        <div class="col2-1">JISOO - ‘꽃(FLOWER)’ M/V</div>
+        <div class="col2-2">BLACKPINK<br>
+          觀看次數：3.9 億次･6 個月前
+        </div>
+      </div>
+      <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+
+    <!-- short -->
+</body>
+<div class="box1"><img src="./data/youtube-shorts-logo.png" alt=""></div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/9.jpg" alt="">
+  </div>
+  <div>Shin ramen fried salmon</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：454萬次</div>
+</div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/10.jpg" alt="">
+  </div>
+  <div>Cheetos hamburger 🍔🌶️🥵</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：238萬次</div>
+</div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/11.jpg" alt="">
+  </div>
+  <div>Pancake Lifehack 🥞🧈</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：2749萬次</div>
+</div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/12.jpg" alt="">
+  </div>
+  <div>Roast Beef 🍣</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：1056萬次</div>
+</div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/13.jpg" alt="">
+  </div>
+  <div>Pringles chicken 😋</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：1.2億次</div>
+</div>
+
+<div class="row2">
+  <div>
+    <img src="./data/images/picture/14.jpg" alt="">
+  </div>
+  <div>Spaghetti recipe 😋</div>
+  <div><i class="fa-solid fa-ellipsis-vertical a"></i></div>
+  <div>觀看次數：582萬次</div>
+</div>
+<div class="hr">
+  <hr>
+  <!-- &nbsp;在文字和圖標間有空格但不斷行 -->
+  <div class="box2">顯示完整資訊&nbsp;&nbsp;&nbsp;<br><i class="fa-solid fa-angle-down"></i></div>
+</div>
+
+<!-- 影片 -->
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/15.jpg">
+    <div class="sec">3:52</div>
+  </div>
+  <div class="col1">
+   
+      <img src="./data/images/picture/15.jfif">
+   
+  </div>
+  <div class="col2">
+    <div class="col2-1">徐馨蕾 Leilei 【溺水的魚 Drowning Fish】 Official Music Video</div>
+    <div class="col2-2">徐馨蕾 Leilei<br>
+      觀看次數：287 萬次･6 個月前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/16.jpg">
+    <div class="sec">2:50</div>
+  </div>
+  <div class="col1">
+    
+      <img src="./data/images/picture/16.jfif">
+   
+  </div>
+  <div class="col2">
+    <div class="col2-1">LISA - 'MONEY' M/V</div>
+    <div class="col2-2">anonlikes<br>
+      觀看次數：1085 萬次･1 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/17.jpg">
+    <div class="sec">3:32</div>
+  </div>
+  <div class="col1">
+    
+      <img src="./data/images/picture/17.jfif">
+   
+  </div>
+  <div class="col2">
+    <div class="col2-1">Avril Lavigne - Bite Me / THE FIRST TAKE</div>
+    <div class="col2-2">THE FIRST TAKE<br>
+      觀看次數：332 萬次･1 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/18.jpg">
+    <div class="sec">3:59</div>
+  </div>
+  <div class="col1">
+  
+      <img src="./data/images/picture/18.jfif">
+    
+  </div>
+  <div class="col2">
+    <div class="col2-1">吳克群 Kenji Wu - 너 귀엽다 你好可愛 feat. 宋智孝 You are so cute feat. Song Ji Hyo (華納 official 高畫質 HD 官方完整版
+      MV)</div>
+    <div class="col2-2">吳克群 Kenji Wu<br>
+      觀看次數：1550 萬次･8 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/19.jpg">
+    <div class="sec">5:55</div>
+  </div>
+  <div class="col1">
+   
+      <img src="./data/images/picture/19.jfif">
+   
+  </div>
+  <div class="col2">
+    <div class="col2-1">老王樂隊｜我還年輕 我還年輕 Teens Edge (Official)</div>
+    <div class="col2-2">老王樂隊<br>
+      觀看次數：3031 萬次･5 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/20.jpg">
+    <div class="sec">3:47</div>
+  </div>
+  <div class="col1">
+   
+      <img src="./data/images/picture/20.jfif">
+    
+  </div>
+  <div class="col2">
+    <div class="col2-1">GAI - 愛如潮水改編+RAP 版（高清去雜音）『如果你沒有她，你就一無所有？』【動態歌詞 Lyrics】</div>
+    <div class="col2-2">EHPMusicChannel<br>
+      觀看次數：1735 萬次･5 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/21.jpg">
+    <div class="sec">4:33</div>
+  </div>
+  <div class="col1">
+   
+      <img src="./data/images/picture/21.jfif">
+   
+  </div>
+  <div class="col2">
+    <div class="col2-1">伍佰 Wu Bai&China Blue【Last Dance】Official Music Video(HD)</div>
+    <div class="col2-2">滾石唱片 ROCK RECORDS<br>
+      觀看次數：2706 萬次･11 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+<div class="row">
+  <div class="pic">
+    <img src="./data/images/picture/22.jpg">
+    <div class="sec">3:52</div>
+  </div>
+  <div class="col1">
+   
+      <img src="./data/images/picture/22.jfif">
+    
+  </div>
+  <div class="col2">
+    <div class="col2-1">馬念先 & 9m88 - 你朝我的方向走來 Walking Towards Me (Official Music Video)</div>
+    <div class="col2-2">華納音樂 Warner Music Taiwan<br>
+      觀看次數：1179 萬次･4 年前
+    </div>
+  </div>
+  <div class="col3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+</div>
+
+
+</html>

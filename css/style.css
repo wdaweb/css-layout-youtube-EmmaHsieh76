@@ -1,0 +1,574 @@
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: white;
+	/* background: rgb(40, 40, 40); */
+}
+
+.h-100 {
+	height: 100%;
+}
+/* ----------最上欄--------- */
+#header {
+	width: 100%;
+	height: 10%;
+	/* background: lightblue; */
+	position: fixed;
+	/* left: 0;
+	top: 0; */
+
+	font-size: 0;
+	/* flex-wrap: nowrap; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: rgb(40, 40, 40);
+}
+
+#header .box {
+	width: 25%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	/* background: rgb(47, 68, 255); */
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#header .box2 {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	/* background: greenyellow; */
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#header .box3 {
+	width: 25%;
+	height: 100%;
+	/* background: rgb(245, 47, 255); */
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+#header .box .box1-1 {
+	margin-left: 4%;
+	width: 30%;
+	height: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: palevioletred; */
+	cursor: pointer;
+}
+
+#header .box .box1-2 {
+	margin-left: 4%;
+}
+#header .box img {
+	width: 40%;
+	height: 40%;
+	/* display: inline-block; */
+	/* position: absolute; */
+	margin: auto;
+	cursor: pointer;
+}
+
+#header .box2 div {
+	background: rgb(40, 40, 40);
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 20px 20px 0;
+	/* background: palegoldenrod; */
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+#header .box2 .box2-1 {
+	/* margin-left: -1%; */
+	width: 7%;
+	border-radius: 0 20px 20px 0;
+	background: rgba(84, 76, 76, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#header .box2 .box2-2 {
+	margin-left: 1%;
+	width: 5%;
+	border-radius: 50%;
+	background: rgba(84, 76, 76, 0.5);
+}
+
+#header .box2 #header .box3 > div {
+	margin-left: 6%;
+}
+#header .box3 div {
+	margin: 2%;
+	width: 10%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+
+	/* background: palegreen; */
+}
+#header .box3 .box3-1 {
+	background: rgba(120, 70, 41, 0.587);
+	border-radius: 50%;
+	font-size: 16px;
+	margin-right: 5%;
+}
+
+#header input {
+	height: 50%;
+	width: 60%;
+	border-radius: 20px 0 0 20px;
+	font-size: 14px;
+	background: rgb(40, 40, 40);
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding-left: 30px;
+}
+
+#header input::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	background-image: url(../data/Cross_icon.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: 50%;
+	background-position: center;
+	/* border-radius: 50%; */
+}
+#header input::-webkit-search-cancel-button:hover {
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.21);
+}
+
+#header input:focus {
+	border: 1px solid #2979ff;
+}
+
+#header .search-icon {
+	margin-right: -3%;
+	background: url(../data/search_icon.png) center center no-repeat rgb(40, 40, 40);
+	background-size: 43%;
+	width: 6%;
+	height: 50%;
+	border: 1px solid #2979ff;
+	border-right: none;
+	border-radius: 20px 0 0 20px;
+	z-index: 1;
+	visibility: hidden;
+	user-select: none;
+}
+
+#header .box2:focus-within .search-icon {
+	visibility: visible;
+}
+
+#header .box1-1:hover,
+#header .box3-3:hover,
+#header .box3-2:hover {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+#header .box2-2:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+/* -----------側邊欄-------- */
+
+#sidebar {
+	/* view port height */
+	width: 15%;
+	height: calc(100vh - 10%);
+	/* background: rgb(31, 30, 30); */
+	background: rgb(40, 40, 40);
+	/* background: palevioletred; */
+	position: fixed;
+	left: 0;
+	top: 10%;
+	font-size: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#sidebar .menu {
+	width: 90%;
+	height: 100%;
+	font-size: 1rem;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	display: inline-block;
+}
+#sidebar .menu div {
+	position: relative;
+	line-height: 2rem;
+	/* color: white; */
+}
+
+#sidebar .box {
+	width: 95%;
+	height: 2rem;
+	display: inline-block;
+	left: 50%;
+	transform: translate(-50%);
+	white-space: nowrap;
+	/* overflow: hidden; */
+	cursor: pointer;
+}
+
+#sidebar .box div:nth-child(1) {
+	width: 20%;
+	height: 2rem;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+}
+
+#sidebar .box div:nth-child(2) {
+	width: 75%;
+	height: 2rem;
+	display: inline-block;
+	/* background: palevioletred; */
+	overflow: hidden;
+	/* white-space: nowrap;  不換行  */
+	text-overflow: ellipsis;
+}
+
+#sidebar .menu .box:hover {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+}
+
+#sidebar .hr {
+	width: 95%;
+	height: 1rem;
+	display: inline-block;
+	box-sizing: border-box;
+
+	font-size: 0;
+	/* background: palevioletred; */
+}
+
+#sidebar hr {
+	width: 95%;
+	opacity: 0.5;
+	font-size: 1rem;
+}
+#sidebar::-webkit-scrollbar {
+	width: 10px; /* 設置卷軸的寬度 */
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+	background-color: #888; /* 設置卷軸的滑塊顏色 */
+	border-radius: 6px; /* 設置卷軸滑塊的圓角 */
+}
+
+#sidebar::-webkit-scrollbar-track {
+	background-color: #212020; /* 設置卷軸的軌道顏色 */
+}
+
+#sidebar pre {
+	font-size: 13px;
+	opacity: 0.5;
+}
+
+#sidebar:hover {
+	overflow: auto;
+}
+
+/* ----------關鍵字 --------- */
+#content-top {
+	width: calc(100% - 15%);
+	height: calc(100vh - 95%);
+	/* background: gold; */
+	left: 15%;
+	position: absolute;
+	top: 10%;
+	background: rgb(40, 40, 40);
+}
+#content-top .keyword {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+	/* background: rgb(31, 30, 30); */
+	position: relative;
+	font-size: 0;
+}
+#content-top .keyword li {
+	display: inline-block;
+	font-size: 12px;
+	margin: 0.1rem 0.5rem;
+	padding: 0.3rem 0.5rem;
+	text-align: center;
+	border-radius: 6px;
+	background: rgba(73, 71, 71, 0.8);
+	cursor: pointer;
+}
+
+#content-top .keyword li:hover {
+	background: rgba(242, 238, 236, 0.3);
+}
+/* --------影片欄位----------- */
+#content {
+	width: calc(100% - 15%);
+	height: calc(100vh - 15%);
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	/* background: lightgreen; */
+	background: rgb(40, 40, 40);
+	overflow: auto;
+	text-align: center;
+}
+#content::-webkit-scrollbar {
+	width: 10px; /* 設置卷軸的寬度 */
+}
+
+#content::-webkit-scrollbar-thumb {
+	background-color: #888; /* 設置卷軸的滑塊顏色 */
+	border-radius: 6px; /* 設置卷軸滑塊的圓角 */
+}
+
+#content::-webkit-scrollbar-track {
+	background-color: #212020; /* 設置卷軸的軌道顏色 */
+}
+#content .row {
+	width: 24%;
+	height: 45%;
+	display: inline-block;
+	position: relative;
+	/* background: rgb(216, 113, 154); */
+	font-size: 0;
+	/* margin-top: 0.5%;
+	margin-left: 0.5%; */
+	margin: 0.5% 0.2%;
+	text-align: left;
+	cursor: pointer;
+}
+
+#content .row .pic {
+	width: 100%;
+	height: 60%;
+	/* background: #457ad5; */
+}
+#content .row .pic img {
+	width: 100%;
+	border-radius: 10px;
+}
+#content .row .pic div {
+	width: 10%;
+	height: 10%;
+	background: #000000c3; /* 不能刪 */
+	position: relative;
+	bottom: 12%;
+	left: 88%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	font-size: 12px;
+	/* opacity: 1; */
+	visibility: visible;
+}
+#content .pic:hover .sec {
+	/* opacity: 0; */
+	visibility: hidden;
+}
+
+#content .col1 {
+	width: 15%;
+	height: 40%;
+	display: inline-block;
+	/* position: relative; */
+	position: relative;
+	/* top: -23%; */
+	/* background: rgb(56, 42, 165); */
+	font-size: 1rem;
+}
+#content .col1 img {
+	width: 80%;
+	border-radius: 50%;
+	margin-top: 10%;
+}
+
+#content .col2 {
+	width: 75%;
+	height: 40%;
+	display: inline-block;
+	position: relative;
+	position: absolute;
+	left: 15%;
+	padding-left: 2%;
+	/* background: rgb(134, 42, 165); */
+	font-size: 1rem;
+}
+#content .col2 .col2-1 {
+	width: 100%;
+	height: 40%;
+	/* background: rgb(50, 205, 50); */
+	/* 兩行字以後就省略掉字 */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	padding: 1% 0;
+}
+#content .col2 .col2-2 {
+	width: 100%;
+	height: 60%;
+	/* background: rgb(50, 205, 197); */
+	font-size: 12px;
+	/* position: relative; */
+	padding: 10px 0;
+	top: -20%;
+}
+
+#content .col3 {
+	width: 10%;
+	height: 40%;
+	display: inline-block;
+	/* position: relative; */
+	position: absolute;
+	left: 90%;
+	/* background: #991c1c; */
+	font-size: 1rem;
+	padding: 1%;
+	text-align: center;
+	margin-top: 1%;
+}
+#content .col3 i {
+	display: none;
+}
+
+#content .row:hover i {
+	display: inline-block;
+}
+
+/* short logo */
+#content .box1 {
+	width: 96%;
+	height: 5%;
+	display: inline-block;
+	/* background: lightskyblue; */
+	text-align: left;
+	margin: 0.5% 0;
+}
+
+#content .box1 img {
+	width: 7%;
+}
+
+#content .row2 {
+	width: 15.5%;
+	height: 75%;
+	display: inline-block;
+	position: relative;
+	/* background: lightseagreen; */
+	text-align: left;
+	margin: 0.35%;
+	cursor: pointer;
+}
+
+#content > .row2 > div:nth-child(1) {
+	width: 100%;
+	height: 80%;
+}
+
+#content > .row2 > div:nth-child(2) {
+	position: absolute;
+	width: 90%;
+	height: 10%;
+
+	/* background: rgb(117, 174, 212); */
+	padding: 2% 0;
+	font-size: 1rem;
+}
+
+#content > .row2 > div:nth-child(3) {
+	position: absolute;
+	width: 10%;
+	height: 20%;
+	left: 90%;
+	/* background: rgb(100, 196, 17); */
+	/* font-size: 1.2rem; */
+	padding-top: 5%;
+	text-align: center;
+	/* display: none; */
+}
+
+#content > .row2 > div:nth-child(3) i {
+	opacity: 0;
+}
+#content > .row2:hover .a {
+	opacity: 1;
+}
+
+#content > .row2 > div:nth-child(4) {
+	position: absolute;
+	width: 90%;
+	height: 10%;
+	bottom: 0%;
+	/* background: rgb(34, 57, 121); */
+	font-size: 12px;
+}
+
+#content .row2 img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+#content .hr {
+	width: 98%;
+	height: 5%;
+	display: inline-block;
+	position: relative;
+	/* background: #000; */
+	font-size: 12px;
+}
+#content hr {
+	opacity: 0.5;
+	font-size: 1rem;
+}
+#content .box2 {
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid white;
+	background: rgb(40, 40, 40);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#content .box2:hover {
+	background: rgb(57, 56, 56);
+	font-size: 12px;
+}
